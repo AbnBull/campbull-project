@@ -2,6 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -41,7 +42,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="{% static 'Cantalope.jpg' %}">About</a>
           <a class="nav-item nav-link" href="{% url 'projectsmain' %}">Projects</a>
           <a class="nav-item nav-link" href="#">Blog</a>
 
@@ -65,7 +66,7 @@
     <p>Camp Bull has been my home since I left the Army in 2003.</p>
     <img class="img-center" src="/media/images/Camp_Bull_2018.jpg" usemap="#campmap" />
     <map name="campmap">
-      <area shape="circle" coords="345,245,40" href="https://www.google.com/maps/@40.8870768,-95.9058368,598m/data=!3m1!1e3?hl=en" alt="ThreeAmigos">
+      <area shape="circle" coords="345,245,40" href="{% static 'Cantalope.jpg' %}" alt="ThreeAmigos">
 
     </map>
 
