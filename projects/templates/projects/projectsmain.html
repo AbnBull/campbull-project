@@ -44,11 +44,10 @@
           <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
           <a class="nav-item nav-link" href="#">About</a>
           <a class="nav-item nav-link" href="#">Blog</a>
-
         </div>
       </div>
     </nav>
-</header>
+  </header>
 
 <main role="main" >
 
@@ -69,7 +68,7 @@
 
           {% for project in projects.all %}
            <div class="col-md-4" >
-             <p class='text-center'>{{project.project_name}}</p>
+             <a href="{% url 'project_detail' project.id %}"><h3>{{project.project_name}}</h3></a>
              <div class="card mb-4 box-shadow">
                <img class="card-img-top" src="{{ project.image.url }}" />
                <div class="card-body">
