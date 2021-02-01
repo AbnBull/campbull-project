@@ -5,3 +5,4 @@ class Blog(models.Model):
     image = models.ImageField(upload_to='images/')
     pub_date = models.DateTimeField()
     content = models.TextField()
+    test_field = models.TextField()
