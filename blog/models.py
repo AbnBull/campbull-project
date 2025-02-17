@@ -6,3 +6,5 @@ class Blog(models.Model):
     pub_date = models.DateTimeField()
     content = models.TextField()
     test_field = models.TextField()
+
+
